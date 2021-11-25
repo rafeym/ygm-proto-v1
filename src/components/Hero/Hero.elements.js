@@ -61,18 +61,6 @@ export const SubHeading = styled.p`
   line-height: 24px;
   color: ${({ lightTxtDesc }) => (lightTxtDesc ? '#a9b3c1' : '#1c2237')};
 `
-export const ServicesContainer = styled.ul`
-  list-style: inside;
-  padding: 10px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-`
-
-export const Services = styled.li`
-  color: black;
-  padding: 10px 0;
-`
 
 export const HeroImgWrapper = styled.div`
   max-width: 555px;

@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-export const InfoSection = styled.div`
+export const ClientSection = styled.div`
   color: #fff;
   padding: 160px 0;
   background: ${({ bgLight }) => (bgLight ? '#fff' : '#101522')};
 `
 
-export const InfoRow = styled.div`
+export const ClientInfoRow = styled.div`
   display: flex;
   margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
@@ -14,7 +14,7 @@ export const InfoRow = styled.div`
   flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
 `
 
-export const InfoCol = styled.div`
+export const ClientInfoCol = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   flex: 1;
@@ -29,7 +29,7 @@ export const InfoCol = styled.div`
   }
 `
 
-export const TextWrapper = styled.div`
+export const ClientTextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
@@ -39,7 +39,7 @@ export const TextWrapper = styled.div`
   }
 `
 
-export const TopHeading = styled.div`
+export const ClientTopHeading = styled.div`
   color: ${({ lightHeading }) => (lightHeading ? '#a9b3c1' : '#4b59f7')};
   font-size: 18px;
   line-height: 16px;
@@ -60,18 +60,6 @@ export const SubHeading = styled.p`
   font-size: 18px;
   line-height: 24px;
   color: ${({ lightTxtDesc }) => (lightTxtDesc ? '#a9b3c1' : '#1c2237')};
-`
-export const ServicesContainer = styled.ul`
-  list-style: inside;
-  padding: 10px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-`
-
-export const Services = styled.li`
-  color: black;
-  padding: 10px 0;
 `
 
 export const HeroImgWrapper = styled.div`

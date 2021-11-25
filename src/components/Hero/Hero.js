@@ -11,9 +11,9 @@ import {
   SubHeading,
   HeroImgWrapper,
   Img,
-} from './Info.elements'
+} from '../Info/Info.elements'
 
-const Info = ({
+const Hero = ({
   primary,
   bgLight,
   imgStart,
@@ -30,7 +30,7 @@ const Info = ({
 }) => {
   return (
     <>
-      <InfoSection bgLight={bgLight} id='about'>
+      <InfoSection bgLight={bgLight} id='home'>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoCol>
@@ -61,4 +61,4 @@ const Info = ({
   )
 }
 
-export default Info
+export default Hero

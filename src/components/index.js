@@ -1,3 +1,6 @@
 export { default as Navbar } from './Navbar/Navbar'
 export { default as InfoSection } from './Info/Info'
+export { default as HeroSection } from './Hero/Hero'
+export { default as ClientSection } from './Client/Client'
+export { default as ServicesSection } from './Service/Service'
 export { default as Footer } from './Footer/Footer'

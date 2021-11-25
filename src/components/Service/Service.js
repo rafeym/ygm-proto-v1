@@ -1,6 +1,8 @@
 import React from 'react'
+
 import { Link } from 'react-router-dom'
 import { Container, Button } from '../../globalStyles'
+
 import {
   InfoSection,
   InfoRow,
@@ -11,10 +13,11 @@ import {
   SubHeading,
   HeroImgWrapper,
   Img,
-} from './Info.elements'
+  ServicesContainer,
+  Services,
+} from '../Info/Info.elements'
 
-const Info = ({
-  primary,
+const Service = ({
   bgLight,
   imgStart,
   lightHeading,
@@ -23,14 +26,17 @@ const Info = ({
   headline,
   lightTxtDesc,
   description,
-  buttonTxt,
+  services,
   start,
   img,
   alt,
+  primary,
+  buttonTxt,
 }) => {
+  console.log(services)
   return (
     <>
-      <InfoSection bgLight={bgLight} id='about'>
+      <InfoSection bgLight={bgLight} id='services'>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoCol>
@@ -40,6 +46,11 @@ const Info = ({
                 <SubHeading lightTxtDesc={lightTxtDesc}>
                   {description}
                 </SubHeading>
+                <ServicesContainer>
+                  {services.map((item) => (
+                    <Services>{item}</Services>
+                  ))}
+                </ServicesContainer>
                 <Link to='/'>
                   {buttonTxt ? (
                     <Button big fontBig primary={primary}>
@@ -61,4 +72,4 @@ const Info = ({
   )
 }
 
-export default Info
+export default Service
