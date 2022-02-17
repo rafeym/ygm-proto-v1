@@ -1,7 +1,10 @@
 # YGM Proto V1
 
-This project was bootstrapped using create-react-app. Project is still currently under work and is not yet complete.
+This project was bootstrapped using create-react-app. Project was created to update existing website.
+
+## Exisiting Site
+https://www.yougetmarketing.com/
 
 ## Live View of Project
 
-https://stoic-bhabha-af1de5.netlify.app/
+https://yougetmarketing-v1.netlify.app/
